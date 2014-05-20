@@ -1,0 +1,6 @@
+# Django 1.7 beta 4
+https://www.djangoproject.com/download/1.7.b4/tarball/
+
+# Apps
+djangorestframework==2.3.13
+django-oauth-toolkit==0.7.1
