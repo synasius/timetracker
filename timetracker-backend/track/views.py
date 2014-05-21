@@ -1,3 +1,11 @@
-from django.shortcuts import render
+from rest_framework import viewsets
 
-# Create your views here.
+from .models import Activity, TimeEntry
+
+
+class ActivityViewSet(viewsets.ModelViewSet):
+    model = Activity
+
+
+class TimeEntryViewSet(viewsets.ModelViewSet):
+    model = TimeEntry
