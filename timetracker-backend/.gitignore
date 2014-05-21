@@ -45,3 +45,6 @@ docs/_build/
 
 # Database
 *.sqlite3
+
+# Django migrations
+migrations/
