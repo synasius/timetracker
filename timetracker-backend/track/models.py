@@ -15,8 +15,8 @@ class Activity(models.Model):
 
 @python_2_unicode_compatible
 class TimeEntry(models.Model):
-    activity = models.ForeignKey(Activity)
-    user = models.ForeignKey(settings.AUTH_USER_MODEL)
+    activity = models.ForeignKey(Activity, related_name="entries")
+    user = models.ForeignKey(settings.AUTH_USER_MODEL, related_name="entries")
     description = models.TextField(blank=True)
     start = models.DateTimeField(blank=True, null=True)
     end = models.DateTimeField(blank=True, null=True)
