@@ -17,8 +17,8 @@ class Activity(models.Model):
 class TimeEntry(models.Model):
     activity = models.ForeignKey(Activity)
     user = models.ForeignKey(settings.AUTH_USER_MODEL)
-    start = models.DateTimeField()
-    end = models.DateTimeField()
+    start = models.DateTimeField(blank=True, null=True)
+    end = models.DateTimeField(blank=True, null=True)
 
     def __str__(self):
         return "Entry for {}".format(self.activity)
