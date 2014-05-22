@@ -1,5 +1,6 @@
 module.exports = {
   options: {
+    loadAll: "vendor/gumby/sass/extensions",
     sassDir: "app/styles",
     cssDir: "tmp/result/assets",
     generatedImagesDir: "tmp/result/assets/images/generated",
