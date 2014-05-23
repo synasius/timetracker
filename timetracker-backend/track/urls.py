@@ -3,6 +3,6 @@ from .views import ActivityViewSet, TimeEntryViewSet
 
 router = routers.DefaultRouter()
 router.register(r'activities', ActivityViewSet)
-router.register(r'track', TimeEntryViewSet)
+router.register(r'tracks', TimeEntryViewSet)
 
 urlpatterns = router.urls
